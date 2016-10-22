@@ -1,0 +1,81 @@
+
+@media screen and (max-width: 1140px) { 
+    }
+@media screen and (max-width: 600px) { 
+    }
+
+/*body {
+    background-image: url("../images/alyssa-davis-gallery.jpg");
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+*/
+
+#title {
+    color: #fdf9fa;
+    font-size: 28px;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+#container {
+    position: fixed;
+    color: #fdf9fa;
+    width: 200px;
+    bottom: 10px;
+    right: 10px;
+
+}
+
+html { 
+  background: url(../images/alyssa-davis-gallery.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.button {
+    background-color: #fdf9fa;
+    border: 1px solid black;
+    height:19px;
+    width: 100px;
+    font-family: Times,serif;
+}
+.button:hover {
+    cursor: pointer;
+}
+
+input:focus { outline: none; }
+.email{
+    background-color: #fdf9fa;
+    font-size: 12px;
+    width: 180px;
+    height:15px;
+    border:1px solid black;
+    padding-left:10px;
+}
+
+#insta {
+    margin-top:10px;
+}
+#link {
+    text-decoration: none;
+    color:black;
+    padding-left:1px;
+    vertical-align: text-top;
+    font-size: 15px;
+
+}
+
+.mc-field-group {
+    padding-bottom: 10px;
+}
+
+.emailbox {
+    padding-top: 5px;
+}
+.spacing {
+    padding-top: 15px;
+    font-size: 10px;
+}
