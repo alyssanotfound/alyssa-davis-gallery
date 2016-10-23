@@ -1,4 +1,9 @@
-img.genericresponse {
-	width: 70%;
-	margin-left:15%;
+
+
+html { 
+  background: url(../images/ty.png) no-repeat center center fixed; 
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
 }
