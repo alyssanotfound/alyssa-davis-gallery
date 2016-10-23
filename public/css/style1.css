@@ -10,6 +10,13 @@
     background-repeat: no-repeat;
 }
 */
+.btn {
+    font-family: serif;
+}
+
+.form-control {
+    width: 170px;
+}
 
 #title {
     color: #fdf9fa;
@@ -22,7 +29,7 @@
     position: fixed;
     color: #fdf9fa;
     width: 200px;
-    bottom: 10px;
+    bottom: 20px;
     right: 10px;
 
 }
