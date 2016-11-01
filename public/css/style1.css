@@ -19,6 +19,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'zagolovochnaya';
+    src: url('../fonts/zagolovochnaya.eot');
+    src: local('☺'), url('../fonts/zagolovochnaya.woff') format('woff'), url('../fonts/zagolovochnaya.ttf') format('truetype'), url('../fonts/zagolovochnaya.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 .btn {
     font-family: serif;
@@ -29,10 +36,10 @@
 }
 
 #title {
-    font-family:'Conv_andrich-regular',Times, serif;
+    font-family:'zagolovochnaya, Conv_andrich-regular',Times, serif;
     color: #fdf9fa;
     font-size: 30px;
-    margin-left: 25px;
+    margin-left: 40px;
     
 }
 
