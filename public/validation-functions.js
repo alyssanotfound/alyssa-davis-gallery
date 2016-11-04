@@ -12,16 +12,16 @@ $(document).ready(function() {
              message: 'The first name is not valid',
                 validators: {
                     notEmpty: {
-                        message: 'The first name is required and cannot be empty'
+                        //message: 'The first name is required and cannot be empty'
                     },
                     stringLength: {
                         min: 1,
                         max: 30,
-                        message: 'The first name must be more than 1 and less than 30 characters long'
+                        //message: 'The first name must be more than 1 and less than 30 characters long'
                     },
                     regexp: {
                         regexp: /^[A-z]+$/,
-                        message: 'The first name can only accept alphabetical input'
+                        //message: 'The first name can only accept alphabetical input'
                     },
                 }
             },
@@ -29,26 +29,26 @@ $(document).ready(function() {
                 message: 'Last Name is not valid',
                 validators: {
                     notEmpty: {
-                        message: 'Last Name is required and cannot be empty'
+                        //message: 'Last Name is required and cannot be empty'
                     },
                     stringLength: {
                         min: 1,
                         max: 30,
-                        message: 'Last Name must be more than 1 and less than 30 characters long'
+                        //message: 'Last Name must be more than 1 and less than 30 characters long'
                     },
                     regexp: {
                         regexp: /^[A-z]+$/,
-                        message: 'Last Names can only consist of alphabetical characters'
+                        //message: 'Last Names can only consist of alphabetical characters'
                     },
                 }
             },
             email: {
                 validators: {
                     notEmpty: {
-                        message: 'The email address is required and cannot be empty'
+                        //message: 'The email address is required and cannot be empty'
                     },
                     emailAddress: {
-                        message: 'The email address is not a valid'
+                        //message: 'The email address is not a valid'
                     }
                 }
             },
@@ -56,7 +56,7 @@ $(document).ready(function() {
                 message: 'Address is not valid',
                 validators: {
                     notEmpty: {
-                        message: 'Address is required and cannot be empty'
+                        //message: 'Address is required and cannot be empty'
                     }
                 }
             }, 
