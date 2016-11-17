@@ -1,8 +1,16 @@
+@media only screen and (max-width:  1000px) {
+    body {
+        background-color: lightblue;
+    }
 
-@media screen and (max-width: 1140px) { 
+    html {
+      background: url(../images/EmmaMcMillan-invitation.png) no-repeat center center fixed !important; 
+      -webkit-background-size: 300px auto !important;
+      -moz-background-size: 300px auto !important;
+      -o-background-size: 300px auto !important;
+      background-size: 300px auto !important;
     }
-@media screen and (max-width: 600px) { 
-    }
+}
 
 /*body {
     background-image: url("../images/alyssa-davis-gallery.jpg");
