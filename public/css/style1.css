@@ -47,6 +47,22 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'caslon-rough';
+    src: url('../fonts/CaslonRoughHEFOP-RegularIta.eot');
+    src: local('☺'), url('../fonts/CaslonRoughHEFOP-RegularIta.woff') format('woff'), url('../fonts/CaslonRoughHEFOP-RegularIta.ttf') format('truetype'), url('../fonts/CaslonRoughHEFOP-RegularIta.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kings-caslon';
+    src: url('../fonts/KingsCaslon_Bd.eot');
+    src: local('☺'), url('../fonts/KingsCaslon_Bd.woff') format('woff'), url('../fonts/KingsCaslon_Bd.ttf') format('truetype'), url('../fonts/KingsCaslon_Bd.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .btn {
     font-family: serif;
 }
@@ -61,6 +77,22 @@
     font-size: 30px;
     margin-left: 40px;
     
+}
+
+#email p {
+    font-family: 'caslon-rough', Times, serif;
+    position: fixed;
+    background-color: #fdf9fa;
+    color: black;
+    width: 166px;
+    height: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border: 1px solid black;
+    top: 10px;
+    right: 30px;
 }
 
 #container {
