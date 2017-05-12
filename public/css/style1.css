@@ -41,6 +41,11 @@
     font-style: normal;
 }
 
+p {
+    line-height: 50%;
+    font-family: Arial, sans-serif;
+}
+
 .btn {
     font-family: serif;
 }
@@ -90,13 +95,13 @@
 
 }
 
-html { 
+/*html { 
   background: url(../images/emma.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+}*/
 
 .button {
     background-color: #fdf9fa;
@@ -110,6 +115,7 @@ html {
 }
 
 input:focus { outline: none; }
+
 .email{
     background-color: #fdf9fa;
     font-size: 12px;
@@ -148,14 +154,14 @@ input:focus { outline: none; }
         /*background-color: lightblue;*/
     }
 
-    html {
+/*    html {
       background: url(../images/EmmaMcMillan-invitation-notice.png) no-repeat center center fixed !important; 
       -webkit-background-size: 300px auto !important;
       -moz-background-size: 300px auto !important;
       -o-background-size: 300px auto !important;
       background-size: 300px auto !important;
     }
-
+*/
     #overlay img {
         display: none !important;
     }
