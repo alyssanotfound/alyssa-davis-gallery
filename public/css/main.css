@@ -1,0 +1,1361 @@
+
+@font-face {
+  font-family: 'Conv_Zagolovochnaya W01 Book';
+  src: url('../fonts/Zagolovochnaya W01 Book.eot');
+  src: local('☺'),
+    url('../fonts/Zagolovochnaya W01 Book.woff') format('woff'),
+    url('../fonts/Zagolovochnaya W01 Book.ttf') format('truetype'),
+    url('../fonts/Zagolovochnaya W01 Book.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cambria';
+  src: url('../fonts/Cambria.eot');
+  src: local('☺'),
+    url('fonts/Cambria.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Cambria.woff') format('woff'),
+    url('../fonts/Cambria.ttf') format('truetype'),
+    url('../fonts/Cambria.svg#Cambria') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Caslon';
+  src: url('../fonts/CaslonRoughHEFOP-RegularIta.eot');
+  src: local('☺'),
+    url('fonts/CaslonRoughHEFOP-RegularIta.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CaslonRoughHEFOP-RegularIta.woff') format('woff'),
+    url('../fonts/CaslonRoughHEFOP-RegularIta.ttf') format('truetype'),
+    url('../fonts/CaslonRoughHEFOP-RegularIta.svg#Cambria') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  font-family: 'Conv_Zagolovochnaya W01 Book', arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #f1f0ed;
+  color: #101820;
+  line-height: 1.25em;
+  display: block;
+}
+
+body { font-size: 1em !important; }
+
+i { font-family: 'Caslon' !important; }
+
+/****************/
+/* -- TITTLE -- */
+/****************/
+
+  .main-menu h1 {
+    font-size: 1.33em;
+    padding-left: 10px;
+    padding-left: 0;
+  }
+
+  .main-menu h1 a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Conv_Zagolovochnaya W01 Book';
+    color: #101820;
+    font-weight: 300;
+  }
+
+  /* MENU - MOBILE */
+  @media only screen and (max-width: 600px), only screen and (max-device-width: 480px) {
+
+    .main-menu {
+      /*padding-bottom: 60px;*/
+    }
+
+    .main-menu h1 {
+      text-align: center;
+    }
+
+    .main-menu h1 a {
+      line-height: 1em;
+    }
+
+    ul.exhibition-menu {
+      padding-bottom: 20px;
+    }
+
+    .exhibition-menu li a {
+      /*font-size: 2.8em;*/
+      /*margin-right: 20px;*/
+    }
+  }
+
+  @media (max-width: 600px) {
+    .main-menu h1 {
+      text-align: center;
+    }
+
+    /*.exhibition-menu-wrapper .exhibition-menu li a.selected {
+      font-size: 1.33em;
+    }*/
+
+    .exhibition-menu li a {
+        /*font-size: 1.33em;*/
+    }
+  }
+
+/*******************/
+/* -- MAIN MENU -- */
+/*******************/
+
+  .main-menu-wrapper {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .main-menu {
+    display: flex;
+    flex: 1;
+    /*height: 55px;*/
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .main-menu ul {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    max-width: 300px;
+    color: black;
+    -webkit-padding-start: 0;
+    -webkit-padding-start: 0;
+    -webkit-padding-end: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-start: 0;
+    height: auto;
+    justify-content: flex-start;
+    margin-top: 15px;
+  }
+
+  .main-menu ul li {
+    list-style-type: none;
+    margin-left: 25px;
+  }
+
+  .main-menu ul li .selected {
+    border-bottom: 1px solid black;
+  }
+
+  .main-menu ul li a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Conv_Zagolovochnaya W01 Book';
+    color: #101820;
+    /*font-size: 1em;*/
+  }
+
+    @media (max-width: 1000px) {
+      .main-menu {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+
+    /* MENU - MOBILE */
+    @media only screen and (max-width: 600px), only screen and (max-device-width: 480px) {
+      .main-menu-wrapper {
+      }
+
+      .main-menu {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .main-menu ul {
+        max-width: none !important;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .main-menu ul li {
+        margin-right: 12px;
+        margin-left: 12px;
+      }
+
+      .main-menu ul li a {
+        /*font-size: 2.7em;*/
+      }
+    }
+
+  @media (max-width: 600px) {
+    /*.main-menu ul li a {
+      font-size: 1em;
+      color: lime;
+    }*/
+  }
+
+
+/*************************/
+/* -- EXHIBITION MENU -- */
+/*************************/
+
+  .exhibition-super-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .exhibition-super-wrapper.exhibition-index {
+    flex-direction: column !important;
+    padding-top: 25px;
+  }
+
+  .exhibition-header-wrapper {
+    display: block;
+    height: auto;
+    line-height: 1.2;
+    font-family: 'Conv_Zagolovochnaya W01 Book';
+    color: #101820;
+  }
+
+  .exhibition-header-wrapper h2 {
+    font-weight: 100 !important;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-padding-start: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .exhibition-list ul.exhibition-list-wrapper li {
+    display: flex;
+    flex-direction: column;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-padding-start: 0px;
+    margin-right: 50px;
+    font-family: 'Conv_Zagolovochnaya W01 Book';
+    color: #101820;
+    max-width: 230px;
+  }
+
+  .exhibition-list ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-padding-start: 0px;
+    flex-wrap: wrap;
+  }
+
+  .exhibition-list ul li {
+    display: flex;
+    flex-direction: column;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-padding-start: 0px;
+    margin-top: 40px;
+  }
+
+  .exhibition-list ul li ul.exhibition-info {
+    display: flex;
+    flex-direction: column;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-padding-start: 0px;
+  }
+
+
+  .exhibition-list ul li a {
+    text-decoration: none;
+  }
+
+  .exhibition-list ul li a .exhibition-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .exhibition-list ul li a .exhibition-info li {
+    font-family: 'Conv_Zagolovochnaya W01 Book';
+    color: #101820;
+    text-decoration: none;
+  }
+
+  .exhibition-image,
+  .publication-image {
+    width: 100%;
+    height: 240px;
+  }
+
+  .exhibition-image img,
+  .publication-image img {
+    height: 100%;
+  }
+
+  .exhibition-list ul.exhibition-list-wrapper li ul.exhibition-info li:first-child,
+  .exhibition-list ul.exhibition-list-wrapper li ul.exhibition-info li:nth-child(2),
+  .publication-list ul.publication-list-wrapper li ul.publication-info li:first-child,
+  .publication-list ul.publication-list-wrapper li ul.publication-info li:nth-child(2) {
+    /*font-size: 1em;*/
+  }
+
+
+  .exhibition-list ul.exhibition-list-wrapper li ul.exhibition-info li,
+  .publication-list ul.publication-list-wrapper li ul.publication-info li {
+    /*font-size: .8em;*/
+    line-height: 1.2;
+  }
+
+  .exhibition-list ul.exhibition-list-wrapper li ul.exhibition-info li span,
+  .publication-list ul.publication-list-wrapper li ul.publication-info li span {
+    font-family: 'Conv_Zagolovochnaya W01 Book';
+  }
+
+  .exhibition-list ul.exhibition-list-wrapper li ul.exhibition-info li span.number,
+  .publication-list ul.publication-list-wrapper li ul.publication-info li span.number {
+    font-family: 'Cambria';
+  }
+
+  @media (max-width: 1000px) {
+    .exhibition-list ul.exhibition-list-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      -webkit-padding-start: 0;
+      justify-content: flex-start;
+    }
+
+    .exhibition-list ul.exhibition-list-wrapper li.exhibition {
+      margin: 20px 40px 20px 0;
+      width: 230px;
+    }
+
+    .exhibition-list ul.exhibition-list-wrapper li.exhibition:last-child {
+      margin: 20px 0 20px 0;
+    }
+
+    .exhibition-super-wrapper {
+      display: block;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .exhibition-info.home .mobile {
+      display: inline-block;
+    }
+  }
+
+  @media only screen and (max-width: 600px), only screen and (max-device-width: 480px) {
+    .exhibition-header-wrapper {
+      margin-top: 40px;
+    }
+
+    .exhibition-list ul.exhibition-list-wrapper {
+      justify-content: center;
+    }
+
+    .exhibition-list ul.exhibition-list-wrapper li {
+      max-width: none;
+    }
+
+    .exhibition-list ul {
+      justify-content: flex-start;
+    }
+
+    .exhibition-list ul li a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .exhibition-super-wrapper.exhibition-index {
+      padding-top: 0;
+    }
+
+    .exhibition-list ul.exhibition-list-wrapper li.exhibition {
+      margin: 0 0 40px 0 !important;
+    }
+
+    .exhibition-list ul.exhibition-list-wrapper li ul.exhibition-info li:first-child,
+    .exhibition-list ul.exhibition-list-wrapper li ul.exhibition-info li:nth-child(2),
+    .publication-list ul.publication-list-wrapper li ul.publication-info li:first-child,
+    .publication-list ul.publication-list-wrapper li ul.publication-info li:nth-child(2) {
+      /*font-size: 2em !important;*/
+    }
+
+    .exhibition-info.home ul li span.mobile {
+      display: none;
+    }
+
+    .exhibition-list ul.exhibition-list-wrapper li ul.exhibition-info.home {
+      width: 100%;
+      display: block;
+    }
+
+    .exhibition-list ul.exhibition-list-wrapper li ul.exhibition-info.home li:first-child,
+    .exhibition-list ul.exhibition-list-wrapper li ul.exhibition-info.home li:nth-child(2) {
+      display: inline-block;
+      margin-right: 6px;
+    }
+
+    .exhibition-list ul.exhibition-list-wrapper li ul.exhibition-info li span,
+    .publication-list ul.publication-list-wrapper li ul.publication-info li span {
+      /*font-size: 2em !important;*/
+    }
+
+    .exhibition-image,
+    .publication-image {
+      width: 100% !important;
+      height: auto !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .exhibition-image img,
+    .publication-image img {
+      width: 75% !important;
+      height: auto !important;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .exhibition-header-wrapper {
+      margin-top: 0;
+    }
+
+    .exhibition-header-wrapper h2 {
+      /*font-size: 1.33em;*/
+    }
+
+    .exhibition-list ul.exhibition-list-wrapper li ul li {
+      /*font-size: 1em;*/
+    }
+
+    .exhibition-list ul.exhibition-list-wrapper li.exhibition {
+      margin: 20px 40px 10px 0;
+    }
+  }
+
+
+/**********************************/
+/* -- EXHIBITION IMAGE WRAPPER -- */
+/**********************************/
+
+  .exhibition-image-wrapper {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    overflow: hidden;
+    margin: 10px;
+    margin-top: 50px;
+  }
+
+  .exhibition-image-wrapper img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+  }
+
+
+/***********************************/
+/* -- EXHIBITION HEADER WRAPPER -- */
+/***********************************/
+
+  .exhibition-header-super-wrapper {
+    width: 325px;
+    display: inline-block;
+  }
+
+  .exhibition-list {
+    margin: 0;
+    padding: 0;
+  }
+
+  .exhibition-header-wrapper {
+    display: block;
+    flex: 1;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .exhibition-list ul li {
+      display: flex;
+      flex-direction: column;
+      -webkit-margin-before: 0px;
+      -webkit-margin-after: 0px;
+      -webkit-padding-start: 0px;
+  }
+
+  .exhibition-header {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /*font-size: 1em;*/
+    height: auto;
+    line-height: 1.2;
+    padding-bottom: 10px;
+    max-width: 1000px;
+    font-family: 'Conv_Zagolovochnaya W01 Book';
+    color: #101820;
+  }
+
+  @media (max-width: 1000px) {
+    .exhibition-header-super-wrapper {
+      width: 100%;
+      width: 400px;
+    }
+
+    .exhibition-header {
+      padding-left: 0;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .exhibition-header-super-wrapper {
+      width: 100%;
+    }
+
+    .exhibition-header {
+      padding-left: 0;
+    }
+  }
+
+  @media only screen and (max-width: 600px), only screen and (max-device-width: 480px) {
+    .exhibition-header-super-wrapper {
+      width: 100%;
+    }
+  }
+
+/****************************/
+/* -- EXHIBITION GALLERY -- */
+/****************************/
+
+  /* styling for this page */
+  .m-scooch {
+    padding-bottom: 100px;
+  }
+
+  .m-scooch-photos {
+    /*padding: 0 25px !important*/
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible;
+  }
+
+  .m-scooch-photos .m-caption {
+    bottom: -80px;
+    padding: 0 10px 20px 10px;
+    /*font-size: .8em;*/
+    background: transparent;
+  }
+
+  .m-fluid .m-item {
+    margin-right: 0;
+  }
+
+  .m-scooch-photos .m-item > img {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .m-card-light {
+      width: 200px;
+      margin: 30px 10px 0 10px;
+  }
+  .m-card-dark h3 {
+      margin-top: 0;
+  }
+
+  .m-item .m-card-dark img, .m-item .m-card-light img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+  }
+
+  .m-inactive {
+      opacity: 0.1;
+      cursor: not-allowed;
+  }
+
+  .m-scooch-example-5 .m-caption {
+      color: #ccc;
+  }
+
+
+  /****************************/
+  /* BUTTON CAROUSEL CONTROLS */
+  /****************************/
+
+  .m-scooch-controls {
+    padding-top: 80px;
+    overflow: visible;
+  }
+
+  .m-scooch-controls a {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    height: calc(100% - 90px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    background: #f1f0ed;
+  }
+
+  .m-scooch-controls a img { height: 30px; }
+  .m-scooch-controls a:first-child { left: -70px; }
+  .m-scooch-controls a:nth-child(2) { right: -70px; }
+
+  .gallery-wrapper {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 20px;
+    background: #f1f0ed;
+  }
+
+  .gallery {
+    max-width: 1100px;
+    overflow: visible;
+  }
+
+  @media (max-width: 1200px) {
+    .gallery {
+      width: 95%;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .gallery-wrapper {
+      padding-left: 0 !important;
+      justify-content: center;
+    }
+    .gallery-wrapper.index {
+      padding-left: 0;
+    }
+    .gallery {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 600px), only screen and (max-device-width: 480px) {
+    .gallery-wrapper {
+      padding-top: 0;
+    }
+
+    .m-scooch-photos {
+      margin-bottom: 50px;
+    }
+    .m-scooch-photos .m-scooch-inner {
+      height: auto !important;
+    }
+
+    .m-scooch-controls {
+      padding-top: 40px;
+      overflow: visible;
+    }
+  }
+
+  /***********************/
+  /* -- GALLERY INDEX -- */
+  /***********************/
+
+  .gallery-wrapper.index {
+    padding-top: 20px;
+    padding-left: 40px;
+  }
+
+  .gallery.index {
+    width: 100% !important;
+    max-width: initial;
+  }
+
+  .gallery-index-photos {
+
+  }
+
+  .gallery-index-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+  }
+
+  .gallery-index-wrapper .m-item {
+    width: 20%;
+    display: inline-block;
+    /*padding: 0 3px 50px 3px;*/
+    padding: 0 0 50px 0;
+  }
+
+  .gallery-index-wrapper .m-item img {
+    width: 98%;
+    margin: 0;
+    float: right;
+  }
+
+  .m-caption { opacity: 0; }
+
+  .gallery-text {
+    margin-top: -65px;
+    width: 100%;
+    text-align: center;
+    /*font-size: .8em;*/
+  }
+
+  @media only screen and (max-width: 600px), only screen and (max-device-width: 480px) {
+    .gallery-index-wrapper {
+      justify-content: flex-start;
+    }
+
+    .gallery-index-wrapper .m-item {
+      width: 49%;
+      display: inline-block;
+      padding-bottom: 20px;
+    }
+
+    .gallery-index-wrapper .m-item img {
+      width: 100%;
+      margin: 0;
+    }
+
+    .gallery-text {
+      margin-top: -20px;
+    }
+  }
+
+  /*********************/
+  /* -- PUBLICATION -- */
+  /*********************/
+
+  .publication-super-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 20px;
+  }
+
+  .publication-header-wrapper {
+    display: block;
+    height: auto;
+    line-height: 1.2;
+    font-family: 'Conv_Zagolovochnaya W01 Book';
+    color: #101820;
+  }
+
+  .publication-header-wrapper h2 {
+    font-weight: 100 !important;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-padding-start: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .publication-list ul.publication-list-wrapper li {
+    display: flex;
+    flex-direction: column;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-padding-start: 0px;
+    margin-right: 50px;
+    font-family: 'Conv_Zagolovochnaya W01 Book';
+    color: #101820;
+    width: 320px;
+  }
+
+  .publication-list ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-padding-start: 0px;
+    flex-wrap: wrap;
+  }
+
+  .publication-list ul li {
+    display: flex;
+    flex-direction: column;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-padding-start: 0px;
+    margin-top: 40px;
+  }
+
+  .publication-list ul li ul.publication-info {
+    display: flex;
+    flex-direction: column;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-padding-start: 0px;
+  }
+
+
+  .publication-list ul li a {
+    text-decoration: none;
+  }
+
+  .publication-list ul li a .publication-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .publication-list ul li a .publication-info li {
+    font-family: 'Conv_Zagolovochnaya W01 Book';
+    color: #101820;
+    text-decoration: none;
+  }
+
+  .publication-list ul.publication-list-wrapper li ul li {
+    /*font-size: 1em;*/
+    line-height: 1.2;
+  }
+
+  @media (max-width: 1000px) {
+    .publication-list ul.publication-list-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      -webkit-padding-start: 0;
+    }
+
+    .publication-list ul.publication-list-wrapper li.publication {
+      margin: 20px 40px 20px 0;
+    }
+
+    .publication-list ul.publication-list-wrapper li.publication:last-child {
+      margin: 20px 0 20px 0;
+    }
+
+    .publication-super-wrapper {
+      display: block;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 600px), only screen and (max-device-width: 480px) {
+
+    .publication-super-wrapper {
+      padding-top: 0;
+    }
+
+    .publication-header-wrapper {
+      margin-top: 40px;
+    }
+
+    .publication-header-wrapper h2 {
+      /*font-size: 4em;*/
+    }
+
+    .publication-list ul li ul.publication-info li {
+      text-align: center;
+      width: 100%;
+    }
+
+    .publication-list ul {
+      justify-content: flex-start;
+    }
+
+    .publication-list ul.publication-list-wrapper li ul li {
+      /*font-size: 2em;*/
+    }
+
+    .publication-list ul.publication-list-wrapper li.publication {
+      margin: 20px 0 60px 0;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .publication-header-wrapper {
+      margin-top: 0;
+    }
+
+    .publication-header-wrapper h2 {
+      /*font-size: 1.33em;*/
+    }
+
+    .publication-list ul.publication-list-wrapper li ul li {
+      /*font-size: 1em;*/
+    }
+
+    .publication-list ul.publication-list-wrapper li.publication {
+      margin: 20px 40px 10px 0;
+    }
+  }
+
+  /********/
+  /* INFO */
+  /********/
+
+  .info.cambria {
+    font-family: 'Cambria';
+  }
+
+  .info-super-wrapper {
+    flex-direction: column !important;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-family: 'Conv_Zagolovochnaya W01 Book';
+    color: #101820 !important;
+  }
+
+  .info-super-wrapper h2, .info-super-wrapper .email, .info-super-wrapper .social {
+    font-family: 'Conv_Zagolovochnaya W01 Book';
+    font-weight: 300;
+    color: #101820 !important;
+    margin-top: 50px;
+  }
+
+  .info-super-wrapper .container-fluid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-super-wrapper .container-fluid .row {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding-top: 40px;
+  }
+
+  .info-super-wrapper .container-fluid .main {
+    display: flex;
+    flex: 1;
+    max-width: 1000px;
+  }
+
+  @media (max-width: 1000px) {
+    .info-super-wrapper {
+      flex-direction: column !important;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .info-super-wrapper .container-fluid .sidebar {
+      padding-right: 50px;
+    }
+  }
+
+  @media only screen and (max-width: 600px), only screen and (max-device-width: 480px) {
+    .info-super-wrapper {
+      flex-direction: column !important;
+      font-family: 'Conv_Zagolovochnaya W01 Book';
+      color: #101820 !important;
+    }
+
+    .info-super-wrapper h2 {
+      /*font-size: 4em;*/
+    }
+
+    .info-super-wrapper .container-fluid .row {
+      flex-direction: column;
+    }
+
+    .info-super-wrapper .container-fluid .sidebar {
+      padding-right: 0px;
+    }
+
+    .info-super-wrapper .container-fluid .sidebar .info {
+      /*font-size: 2.8em;*/
+      line-height: 1.2;
+    }
+
+    .info-super-wrapper .container-fluid .sidebar div.phone {
+      color: black !important;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .info-super-wrapper h2 {
+      /*font-size: 1.33em;*/
+    }
+
+    .info-super-wrapper .container-fluid .sidebar .info {
+      /*font-size: 1em;*/
+      line-height: 1.2;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------- */
+/* -- CLEAN-UP HOME EXHBITION MENU -- */
+/* ---------------------------------- */
+
+
+  .single-exhibition-super-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding-left: 80px;
+    padding-right: 80px;
+    overflow: hidden;
+  }
+
+  .single-exhibition-super-wrapper.exhibition-index {
+    flex-direction: column !important;
+  }
+
+  .single-exhibition-header-wrapper {
+    display: block;
+    flex-direction: column;
+    flex: 1;
+    font-weight: 300;
+    height: auto;
+    line-height: 1.2;
+    font-family: 'Conv_Zagolovochnaya W01 Book';
+    color: #101820;
+  }
+
+  .single-exhibition-header-wrapper div {
+    display: block;
+    /*font-size: 1em;*/
+  }
+
+
+  .single-exhibition-header-wrapper div span {
+    display: inline-block;
+    /*font-size: 0.8em;*/
+  }
+
+  .single-exhibition ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-padding-start: 0px;
+    flex-wrap: wrap;
+  }
+
+  .single-exhibition-list ul.single-exhibition-list-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-padding-start: 0;
+    justify-content: flex-start;
+  }
+
+  ul.single-exhibition-list-wrapper li a ul.single-exhibition-info {
+    margin: 0;
+  }
+
+  .single-exhibition-list ul.single-exhibition-list-wrapper li {
+    display: flex;
+    flex-direction: column;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-padding-start: 0px;
+    margin-right: 50px;
+    font-family: 'Conv_Zagolovochnaya W01 Book';
+    color: #101820;
+  }
+
+  .single-exhibition-list ul li ul.single-exhibition-info {
+    display: flex;
+    flex-direction: column;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-padding-start: 0px;
+  }
+
+
+  .single-exhibition-list ul li a {
+    text-decoration: none;
+  }
+
+  .single-exhibition-list ul li a .single-exhibition-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .single-exhibition-list ul li ul.single-exhibition-info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-padding-start: 0px;
+  }
+
+  .single-exhibition-list ul.single-exhibition-list-wrapper li ul.single-exhibition-info {
+    margin-right: 0;
+  }
+
+  .single-exhibition-list ul li a .single-exhibition-info li {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Conv_Zagolovochnaya W01 Book';
+    color: #101820;
+    text-decoration: none;
+    margin: 0;
+  }
+
+  .single-exhibition-header ul, .exhibition-list ul.exhibition-info,
+  .publication-list ul.publication-info {
+    list-style-type: none;
+    -webkit-margin-before: 0;
+    -webkit-padding-start: 0;
+    -webkit-margin-after: 0;
+    line-height: 1;
+  }
+
+  .single-exhibition-header ul li, .exhibition-list ul.exhibition-info li,
+  .publication-list ul.publication-info li {
+    list-style-type: none;
+    display: inline-block;
+    float: left;
+    -webkit-margin-before: 0;
+    -webkit-padding-start: 0;
+    -webkit-margin-after: 0;
+  }
+
+  .single-exhibition-header ul li span, .exhibition-list ul.exhibition-info li span,
+  .publication-list ul.publication-info li span {
+    display: inline-block;
+    font-family: 'Conv_Zagolovochnaya W01 Book';
+    -webkit-margin-before: 0;
+    -webkit-padding-start: 0;
+    -webkit-margin-after: 0;
+    float: left;
+  }
+
+  ul li span.number, .exhibition-list  ul li span.number,
+  ul.exhibition-info li span.number, .exhibition-list  ul.exhibition-info li span.number,
+  ul.publication-info li span.number, .publication-list  ul.publication-info li span.number {
+    font-family: 'Cambria';
+    padding-left: 3px;
+    display: inline-block;
+  }
+
+  .number { font-family: 'Cambria' !important; display: inline-block; }
+
+  @media only screen and (max-width: 600px), only screen and (max-device-width: 480px) {
+    .single-exhibition-header-wrapper div {
+      display: block;
+      /*font-size: 2em;*/
+    }
+
+    .single-exhibition-header-wrapper div span {
+      display: inline-block;
+      /*font-size: 1em;*/
+    }
+
+    .single-exhibition-list ul {
+      justify-content: flex-start;
+    }
+
+    .single-exhibition-list ul.single-exhibition-list-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      -webkit-padding-start: 0;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .single-exhibition-list ul {
+      justify-content: flex-start;
+      -webkit-padding-start: 0px;
+    }
+
+    .single-exhibition-list ul.single-exhibition-list-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      -webkit-padding-start: 0;
+    }
+
+    .single-exhibition-list li { margin-right: 50px; }
+
+    .single-exhibition-list ul.single-exhibition-list-wrapper li {
+      margin: 15px 40px 0 0;
+    }
+
+    .single-exhibition-list ul.single-exhibition-list-wrapper li ul {
+      margin-top: 15px;
+      margin-bottom: 40px;
+    }
+
+    .single-exhibition-list ul.single-exhibition-list-wrapper li ul li {
+      margin-top: 0;
+    }
+  }
+
+  .single-exhibition-menu-wrapper {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 30px;
+  }
+
+  .single-exhibition-menu {
+    padding-top: 30px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    list-style-type: none;
+    font-family: 'Conv_Zagolovochnaya W01 Book';
+    color: #101820;
+    padding-bottom: 10px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-padding-start: 0px;
+    max-width: 1000px;
+
+  }
+
+  .single-exhibition-submenu ul {
+    -webkit-margin-before: 0;
+    list-style-type: none;
+  }
+
+  .single-exhibition-menu > li {
+    display: inline-block;
+    margin-right: 10px;
+    color: black ;
+    height: 25px;
+    /*font-size: 1em;*/
+  }
+
+  .single-exhibition-menu .mobile {
+    display: none;
+  }
+
+  .single-exhibition-menu-wrapper {
+    padding-top: 0;
+  }
+
+  .single-exhibition-menu-wrapper .single-exhibition-menu li a {
+    color: black !important;
+    text-decoration: none;
+  }
+
+  .single-exhibition-menu-wrapper .single-exhibition-menu li a.selected {
+    color: black !important;
+    border-bottom: 1px solid black;
+  }
+
+  .single-exhibition-header-super-wrapper {
+    padding-top: 20px;
+    width: 280px;
+  }
+
+    @media (max-width: 1000px) {
+      .single-exhibition-super-wrapper {
+        display: block;
+      }
+
+      .single-exhibition-super-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+
+
+    @media only screen and (max-width: 600px), only screen and (max-device-width: 480px) {
+      .single-exhibition-super-wrapper {
+        display: block;
+        width: auto;
+      }
+
+      .single-exhibition-header-super-wrapper {
+        width: 100%;
+      }
+
+      .single-exhibition-header-wrapper {
+        width: 100%;
+      }
+
+      .single-exhibition-menu {
+        padding-left: 0;
+        padding-top: 30px;
+        width: 100%;
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+      }
+
+      .single-exhibition-menu .mobile {
+        display: inline-block;
+      }
+
+      .single-exhibition-menu > li {
+        margin-right: 15px;
+        /*font-size: 1em !important;*/
+        height: 30px;
+      }
+
+      .single-exhibition-menu > li:last-child {
+        margin-right: 0px;
+      }
+
+      .single-exhibition-menu-wrapper .single-exhibition-menu li a.selected {
+        border-bottom: 1px solid black;
+      }
+
+      .single-exhibition-list ul.exhibition-list-wrapper li ul li {
+        line-height: 1.2;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .single-exhibition-menu > li { margin-right: 15px; }
+      .single-exhibition-menu > li:last-child { margin-right: 0px; }
+      /*.single-exhibition-list ul.exhibition-list-wrapper li ul li { font-size: 1em; }*/
+    }
+
+
+    /* ------------------ */
+    /* -  SUBSCRIPTION  - */
+    /* ------------------ */
+
+    #container-p {
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+      right: 60px;
+    }
+
+    #container-p input:focus {
+      outline: none !important;
+    }
+
+    #container-p p {
+      color: black;
+      font-family: 'Conv_Zagolovochnaya W01 Book', Times, serif;
+      display: none;
+      font-size:11px;
+    }
+
+
