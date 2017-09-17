@@ -791,6 +791,7 @@ i { font-family: 'Caslon' !important; }
   .gallery-text {
     margin-top: -65px;
     width: calc(100% - 40px);
+    margin: 0 auto;
     text-align: center;
     /*font-size: .8em;*/
   }
