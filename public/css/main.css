@@ -551,7 +551,7 @@ i { font-family: 'Caslon' !important; }
     /*padding: 0 25px !important*/
     margin: 0 !important;
     padding: 0 !important;
-    overflow: visible;
+    /* overflow: visible; */
   }
 
   .m-scooch-photos .m-caption {
@@ -598,26 +598,81 @@ i { font-family: 'Caslon' !important; }
   /* BUTTON CAROUSEL CONTROLS */
   /****************************/
 
-  .m-scooch-controls {
+ /* .m-scooch-controls {
     padding-top: 80px;
     overflow: visible;
-  }
+  }*/
 
-  .m-scooch-controls a {
-    position: absolute;
-    top: 0;
-    z-index: 10;
-    height: calc(100% - 90px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 30px;
-    background: #f1f0ed;
-  }
+   .m-scooch-controls {
+     display: flex;
+     padding: 0;
+     overflow: visible;
+     left: 0;
+     bottom: 50px;
+     width: 160px;
+     height: 52px;
+     position: fixed;
+     padding-left: 60px;
+     /* background: lemonchiffon; */
+   }
 
-  .m-scooch-controls a img { height: 30px; }
+   .m-scooch-controls .counter {
+     display: flex;
+     align-items: center;
+     width: 100px;
+     justify-content: center;
+   }
+
+   @media (max-width: 1000px) {
+     .m-scooch-controls {
+      padding-left: 10px;
+     }
+   }
+
+   /* .m-scooch-controls a {
+     position: absolute;
+     top: 0;
+     z-index: 10;
+     height: calc(100% - 90px);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 10px 30px;
+     background: #f1f0ed;
+   } */
+
+   .m-scooch-controls a {
+     padding: 0;
+     width: 7px;
+     /* height: 20px; */
+     /* background: skyblue; */
+     position: relative;
+     display: inline-block;
+   }
+
+   .m-scooch-controls a.button-prev {
+     left: 0;
+     padding: 20px;
+   }
+   .m-scooch-controls a.button-next {
+     left: 0;
+     right: 0;
+     padding: 20px;
+   }
+
+   .m-scooch-controls a img {
+     height: auto;
+     width: 100%;
+     /* background: red; */
+     padding: 0;
+     margin: 0 auto;
+     display: inline-block;
+     top: 0;
+   }
+
+  /* .m-scooch-controls a img { height: 30px; }
   .m-scooch-controls a:first-child { left: -70px; }
-  .m-scooch-controls a:nth-child(2) { right: -70px; }
+  .m-scooch-controls a:nth-child(2) { right: -70px; } */
 
   .gallery-wrapper {
     display: flex;
@@ -632,7 +687,7 @@ i { font-family: 'Caslon' !important; }
 
   .gallery {
     max-width: 1100px;
-    max-height: 825px;
+    max-height: 820px;
     overflow: visible;
   }
 
@@ -646,12 +701,18 @@ i { font-family: 'Caslon' !important; }
     .gallery-wrapper {
       padding-left: 0 !important;
       justify-content: center;
+      max-height: 400px;
     }
     .gallery-wrapper.index {
       padding-left: 0;
     }
     .gallery {
-      width: 100%;
+      /*width: 80%;*/
+    }
+
+    .m-scooch-photos .m-scooch-inner {
+      height: auto !important;
+      max-height: 630px;
     }
   }
 
@@ -665,11 +726,16 @@ i { font-family: 'Caslon' !important; }
     }
     .m-scooch-photos .m-scooch-inner {
       height: auto !important;
+      max-height: 300px;
     }
 
     .m-scooch-controls {
-      padding-top: 40px;
       overflow: visible;
+      padding: 0;
+      position: fixed;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
     }
   }
 
@@ -720,6 +786,26 @@ i { font-family: 'Caslon' !important; }
     /*font-size: .8em;*/
   }
 
+  @media (max-width: 1000px) {
+    .gallery-text {
+      position: absolute;
+      bottom: 150px;
+      margin-top: auto;
+    }
+
+    .m-scooch.m-fluid > .m-scooch-inner > * {
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    .m-scooch-photos .m-item > img {
+      width: 60%;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+    }
+  }
+
   @media only screen and (max-width: 600px), only screen and (max-device-width: 480px) {
     .gallery-index-wrapper {
       justify-content: flex-start;
@@ -737,7 +823,26 @@ i { font-family: 'Caslon' !important; }
     }
 
     .gallery-text {
-      margin-top: -20px;
+      margin-top: 15px;
+      padding-bottom: 30px;
+    }
+
+    .gallery-text {
+      position: absolute;
+      bottom: 150px;
+      margin-top: auto;
+    }
+
+    .m-scooch.m-fluid > .m-scooch-inner > * {
+      text-align: center;
+      padding-top: 0;
+    }
+
+    .m-scooch-photos .m-item > img {
+      width: 100%;
+      margin: 0;
+      left: 0;
+      right: 0;
     }
   }
 
