@@ -709,7 +709,8 @@ i { font-family: 'Caslon' !important; }
       padding-left: 0;
     }
     .gallery {
-      /*width: 80%;*/
+      width: 74%;
+      margin: 0 auto;
     }
 
     .m-scooch-photos .m-scooch-inner {
@@ -789,7 +790,7 @@ i { font-family: 'Caslon' !important; }
 
   .gallery-text {
     margin-top: -65px;
-    width: 100%;
+    width: calc(100% - 40px);
     text-align: center;
     /*font-size: .8em;*/
   }
@@ -803,7 +804,7 @@ i { font-family: 'Caslon' !important; }
 
     .m-scooch.m-fluid > .m-scooch-inner > * {
       text-align: center;
-      padding-top: 100px;
+      /*padding-top: 100px;*/
     }
 
     .m-scooch-photos .m-item > img {
@@ -1392,6 +1393,7 @@ i { font-family: 'Caslon' !important; }
       .single-exhibition-super-wrapper {
         padding-left: 20px;
         padding-right: 20px;
+        width: calc(100% - 40px);
       }
     }
 
