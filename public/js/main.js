@@ -153,7 +153,7 @@ function updateText() {
   console.log("Update Text");
   $(".counter").empty();
   // console.log(currentIndex.toString() + "/" + (testArray.length - 1).toString());
-  $(".counter").append(currentIndex.toString() + "/" + (testArray.length - 1).toString());
+  $(".counter").append((currentIndex + 1).toString() + "/" + (testArray.length - 1).toString());
   $(".gallery-text").empty();
   $( ".gallery-text" ).append( textInfo[currentIndex] );
 }
