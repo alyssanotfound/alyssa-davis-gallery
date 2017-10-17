@@ -763,6 +763,10 @@ i { font-family: 'Caslon' !important; }
     max-width: initial;
   }
 
+  .gallery-wrapper.index .gallery {
+    max-height: none;
+  }
+
   .gallery-index-photos {
 
   }
