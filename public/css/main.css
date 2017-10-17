@@ -688,7 +688,7 @@ i { font-family: 'Caslon' !important; }
 
   .gallery {
     max-width: 1100px;
-    max-height: 760px;
+    max-height: 640px;
     overflow: visible;
   }
 
@@ -709,7 +709,7 @@ i { font-family: 'Caslon' !important; }
       padding-left: 0;
     }
     .gallery {
-      width: 74%;
+      width: 55%;
       margin: 0 auto;
     }
 
@@ -789,7 +789,7 @@ i { font-family: 'Caslon' !important; }
   .m-caption { opacity: 0; }
 
   .gallery-text {
-    margin-top: -65px;
+    /*margin-top: -65px;*/
     width: calc(100% - 40px);
     margin: 0 auto;
     text-align: center;
@@ -799,7 +799,7 @@ i { font-family: 'Caslon' !important; }
   @media (max-width: 1000px) {
     .gallery-text {
       position: absolute;
-      bottom: 150px;
+      bottom: 100px;
       margin-top: auto;
     }
 
@@ -1383,7 +1383,7 @@ i { font-family: 'Caslon' !important; }
 
   .single-exhibition-header-super-wrapper {
     padding-top: 20px;
-    width: 280px;
+    width: 400px;
   }
 
     @media (max-width: 1000px) {
