@@ -9,6 +9,7 @@ var testArray = ["image-1", "image-2", "image-3", "image-4",
                  "image-17", "image-18", "image-19", "image-20",
                  "image-21", "image-22", "image-23", "image-24",
                  "image-25"];
+
 var initialPage = true;
 
 
@@ -29,6 +30,7 @@ for (i = 0; i < testArray.length; i++) {
   }
 }
 updateURL();
+updateText();
 initialPage = false;
 
 
@@ -39,6 +41,7 @@ if (initialPage === false) {
     currentIndex = (parseInt($('.m-active .m-caption ').text(), 10) - 1);
     console.log("CURRENT-INDEX: ", currentIndex);
     updateURL();
+    updateText();
   });
 }
 
@@ -57,6 +60,7 @@ function prevBtnPress() {
     currentIndex--;
   }
   updateURL();
+  updateText();
 }
 
 // PREV BUTTON
@@ -68,6 +72,7 @@ function nextBtnPress() {
     currentIndex++;
   }
   updateURL();
+  updateText();
 }
 
 
@@ -131,4 +136,11 @@ $('html').keydown(function(e){
 
 function updateURL() {
   history.pushState("", "", "#" + testArray[currentIndex]);
+}
+
+function updateText() {
+  console.log("Update Text");
+  $(".counter").empty();
+  console.log(currentIndex.toString() + "/" + (testArray.length - 1).toString());
+  $(".counter").append((currentIndex + 1).toString() + "/" + (testArray.length - 1).toString());
 }
