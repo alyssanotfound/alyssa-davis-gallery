@@ -699,18 +699,33 @@ i { font-family: 'Caslon' !important; }
     }
   }
 
+  @media (max-height: 768px) {
+    .gallery {
+      max-height: 510px;
+    }
+  }
+
+  @media (max-height: 600px) {
+    .gallery {
+      width: 75%;
+    }
+  }
+
   @media (max-width: 1000px) {
     .gallery-wrapper {
       display: block;
       padding-left: 0 !important;
       justify-content: center;
       max-height: 400px;
+      padding-top: 0;
+      margin-top: -100px;
     }
+
     .gallery-wrapper.index {
       padding-left: 0;
     }
     .gallery {
-      width: 55%;
+      width: 45%;
       margin: 0 auto;
     }
 
@@ -743,6 +758,7 @@ i { font-family: 'Caslon' !important; }
   @media only screen and (max-width: 600px), only screen and (max-device-width: 480px) {
     .gallery-wrapper {
       padding-top: 0;
+      margin-top: 0;
     }
 
     .gallery {
