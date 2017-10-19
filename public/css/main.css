@@ -1318,6 +1318,7 @@ i { font-family: 'Caslon' !important; }
     font-family: 'Cambria';
     padding-left: 3px;
     display: inline-block;
+    line-height: 1.1;
   }
 
   .number { font-family: 'Cambria' !important; display: inline-block; }
