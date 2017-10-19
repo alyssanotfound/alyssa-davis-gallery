@@ -836,7 +836,7 @@ i { font-family: 'Caslon' !important; }
     text-align: center;
     position: fixed;
     bottom: 50px;
-    max-width: 900px;
+    max-width: 70%;
     height: 52px;
     display: flex;
     align-items: center;
