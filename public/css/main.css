@@ -831,12 +831,12 @@ i { font-family: 'Caslon' !important; }
 
   .gallery-text {
     /*margin-top: -65px;*/
-    width: calc(100% - 40px);
+    /*width: calc(100% - 40px);*/
     margin: 0 auto;
     text-align: center;
     position: fixed;
     bottom: 50px;
-    max-width: 70%;
+    max-width: 55%;
     height: 52px;
     display: flex;
     align-items: center;
