@@ -28,6 +28,7 @@ var textInfo = [
   "<div>Installation view: <i>40 Pest</i>, Alyssa Davis Gallery, <div class='number'>2017</div></div>",
   "<div>Installation view: <i>40 Pest</i>, Alyssa Davis Gallery, <div class='number'>2017</div></div>",
   "<div>Dennis Witkin, <i>lamp (udi thinking about moon and stars)</i>, <div class='number'>2017</div> epoxy clay, polymer clay, pipe, cal-tint, charcoal, graphite, cement, balsa wood</div>",
+  "<div>Dennis Witkin, <i>lamp (udi thinking about moon and stars)</i>, <div class='number'>2017</div> epoxy clay, polymer clay, pipe, cal-tint, charcoal, graphite, cement, balsa wood</div>",
   "<div>Joel Dean, <i>Time Keepers (Empty Stomach Challenge)</i>, <div class='number'>2017</div>, mud, cast silicone rubber</div>",
   "<div>Joel Dean, <i>Time Keepers (Empty Stomach Challenge)</i>, <div class='number'>2017</div>, mud, cast silicone rubber</div>",
   "<div>Ala Dehghan, <i>Technoself: Persona</i> <div class='number'>#11</div>/Puppet Images for Theater of Cruelty, <div class='number'>2017</div> mixed media, <div class='number'>9</div>” x <div class='number'>12</div>”</div>",
