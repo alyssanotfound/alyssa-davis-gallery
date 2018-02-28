@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'zagolovochnaya';
+    src: url('fonts/zagolovochnaya.eot');
+    src: local('☺'), url('fonts/zagolovochnaya.woff') format('woff'), url('fonts/zagolovochnaya.ttf') format('truetype'), url('fonts/zagolovochnaya.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'caslon-rough';
+    src: url('fonts/CaslonRoughHEFOP-RegularIta.eot');
+    src: local('☺'), url('fonts/CaslonRoughHEFOP-RegularIta.woff') format('woff'), url('fonts/CaslonRoughHEFOP-RegularIta.ttf') format('truetype'), url('fonts/CaslonRoughHEFOP-RegularIta.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	background: #f1f0ed;
+	font-family: 'zagolovochnaya', serif;
+	text-align: center;
+	font-size: 1em;
+}
+
+img {
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+#container {
+	padding
+}
+
+#centerblock {
+	border: 1px solid black;
+	margin: auto; 
+	width: 70%;
+	height: auto;
+	padding: 3%;
+	
+}
+
+.italics {
+	font-family: 'caslon-rough', serif;
+}
+
+.small {
+	font-size: 0.8em;
+}
