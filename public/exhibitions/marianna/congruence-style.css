@@ -36,11 +36,11 @@ a {
 
 #centerblock {
 	border: 1px solid black;
-	margin: auto; 
+	margin: auto;
 	width: 70%;
 	height: auto;
 	padding: 3%;
-	
+
 }
 
 .italics {
@@ -49,4 +49,23 @@ a {
 
 .small {
 	font-size: 0.8em;
+}
+
+#container-p {
+  bottom: 0;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  margin: 0 auto;
+  width: 70%;
+  height: 30px;
+  padding: 50px 3% !important;
+  position: relative;
+}
+
+.form-horizontal {
+  display: block;
+  float: right;
+  right: 0;
+  position: absolute;
 }

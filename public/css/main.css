@@ -47,6 +47,12 @@ html, body {
 
 body { font-size: 1em !important; }
 
+body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
 i { font-family: 'Caslon' !important; }
 
 /****************/
@@ -112,7 +118,7 @@ i { font-family: 'Caslon' !important; }
 
   .main-menu-wrapper {
     display: flex;
-    flex: 1;
+    /*flex: 1;*/
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -1511,12 +1517,14 @@ i { font-family: 'Caslon' !important; }
     /* ------------------ */
 
     #container-p {
-      position: absolute;
-      bottom: 0;
       display: flex;
       flex: 1;
+      flex-direction: column;
       justify-content: flex-end;
-      right: 60px;
+      align-items: flex-end;
+      padding-right: 80px;
+      padding-bottom: 50px;
+      position: relative;
     }
 
     #container-p input:focus {
