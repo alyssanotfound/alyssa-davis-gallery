@@ -731,6 +731,7 @@ i { font-family: 'Caslon' !important; }
 
     .gallery-wrapper.index {
       padding-left: 0;
+      max-height: none;
     }
     .gallery {
       width: 45%;
