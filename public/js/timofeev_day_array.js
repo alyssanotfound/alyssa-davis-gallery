@@ -22,11 +22,5 @@ var textInfo = [
   "<div>Viktor Timofeev, <i>God Flower 6AB</i>, <div class='number'>2018</div>, detail</div>",
   "<div>Viktor Timofeev, Installation view: <i>God Room</i>, Alyssa Davis Gallery, <div class='number'>2018</div></div>",
   "<div>Viktor Timofeev, <i>Abecedary for A and B</i>, <div class='number'>2018</i>, two-channel generative video, infinite duration</div>",
-  "<div>Viktor Timofeev, <i>Abecedary for A and B</i>, <div class='number'>2018</i>, detail</div>",
-  "<div>Viktor Timofeev, Installation view: <i>God Room</i>, Alyssa Davis Gallery, <div class='number'>2018</div></div>",
-  "<div>Viktor Timofeev, Installation view: <i>God Room</i>, Alyssa Davis Gallery, <div class='number'>2018</div></div>",
-  "<div>Viktor Timofeev, Installation view: <i>God Room</i>, Alyssa Davis Gallery, <div class='number'>2018</div></div>",
-  "<div>Viktor Timofeev, Installation view: <i>God Room</i>, Alyssa Davis Gallery, <div class='number'>2018</div></div>",
-  "<div>Viktor Timofeev, Installation view: <i>God Room</i>, Alyssa Davis Gallery, <div class='number'>2018</div></div>",
-  "<div>Viktor Timofeev, Installation view: <i>God Room</i>, Alyssa Davis Gallery, <div class='number'>2018</div></div>"
+  "<div>Viktor Timofeev, <i>Abecedary for A and B</i>, <div class='number'>2018</i>, detail</div>"
 ];
