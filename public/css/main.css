@@ -1041,7 +1041,7 @@ i { font-family: 'Caslon' !important; }
     }
 
     .publication-list ul.publication-list-wrapper li.publication:last-child {
-      margin: 20px 0 20px 0;
+      /*margin: 20px 0 20px 0;*/
     }
 
     .publication-super-wrapper {
